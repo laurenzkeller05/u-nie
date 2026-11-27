@@ -3,7 +3,7 @@ name = "mci-durchgespielt"
 version = "0.1.0"
 description = "Lokales CLI für Sakai@MCI und myMCI: Kurse, Deadlines, Dateien, Noten"
 requires-python = ">=3.11"
-dependencies = ["requests>=2.31", "python-dotenv>=1.0"]
+dependencies = ["requests>=2.31", "python-dotenv>=1.0", "tzdata>=2024.1; sys_platform == 'win32'"]
 
 [project.scripts]
 mci = "mci.cli:main"
